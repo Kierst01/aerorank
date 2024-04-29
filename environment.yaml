@@ -1,0 +1,8 @@
+name: 'plane_spotter'
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip:
+    - requests==2.31.0
