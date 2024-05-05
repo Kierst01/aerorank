@@ -73,7 +73,6 @@ def get_bounding_box(user_latitude, user_longitude, search_distance):
 
     return (max_coords[0], max_coords[1], min_coords[0], min_coords[1])
 
-print (get_bounding_box(49.0, -123.5, 150))
 
 
 
