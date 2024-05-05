@@ -34,5 +34,3 @@ def get_bounding_box(user_latitude, user_longitude, search_distance_meters):
     min_bbox_latitude, min_bbox_longitude = utm.to_latlon(utm_bbox_x_min, utm_bbox_y_min, zone_num, zone_letter)
 
     return (max_bbox_latitude, max_bbox_longitude, min_bbox_latitude, min_bbox_longitude)
-
-print (get_bounding_box(49.248, -123.174, 150000))
