@@ -49,3 +49,11 @@ class Plane(Base):
 
     def __repr__(self):
         return f'Time: {self.time_position}, Icao24: {self.icao24}, Callsign:{self.callsign}, Latitude{self.latitude}, Longitude: {self.longitude}, On Ground: {self.on_ground}, Velocity: {self.velocity}: True Track: {self.true_track}'
+    
+class Time(Base):
+    __tablename__ = 'requested_times'
+    
+    time:Mapped[int] = mapped_column(primary_key = True)
+
+    def __init__(self, time:int):
+        self.time = time
